@@ -1,0 +1,9 @@
+<resources>
+    <string name="say_something">Say something</string>
+    <string name="error_empty_message">Please insert something</string>
+    <string name="save_memo">Save Memo</string>
+    <string name="restore_memo">Restore Memo</string>
+    <string name="clear_memo">Clear Memo</string>
+    <string name="saved">Saved</string>
+    <string name="cleared">Cleared</string>
+</resources>

@@ -55,4 +55,11 @@
         android:layout_height="wrap_content"
         android:text="@string/pinning_shortcuts_and_widgets"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnCustomDataStore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/custom_data_store"
+        android:textAllCaps="false" />
 </LinearLayout>

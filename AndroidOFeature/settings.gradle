@@ -1,4 +1,7 @@
-include ':app', ':safebrowsing', ':pinning'
+include ':app'
+include ':customdatastore'
+include ':safebrowsing'
+include ':pinning'
 include ':pictureinpicture'
 include ':notificationchannel'
 include ':fontxml'

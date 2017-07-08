@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 
+import com.akexorcist.customdatastore.MemoNoteActivity;
 import com.akexorcist.fontxml.FontXmlActivity;
 import com.akexorcist.notificationchannel.NotificationChannelActivity;
 import com.akexorcist.omg.autosizing.AutosizingActivity;
@@ -22,6 +23,7 @@ public class MenuActivity extends AppCompatActivity {
     private Button btnAutosizingTextViews;
     private Button btnSafeBrowsing;
     private Button btnPinningShortcutsAndWidgets;
+    private Button btnCustomDataStore;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,6 +41,7 @@ public class MenuActivity extends AppCompatActivity {
         btnAutosizingTextViews = findViewById(R.id.btnAutosizingTextViews);
         btnSafeBrowsing = findViewById(R.id.btnSafeBrowsing);
         btnPinningShortcutsAndWidgets = findViewById(R.id.btnPinningShortcutsAndWidgets);
+        btnCustomDataStore = findViewById(R.id.btnCustomDataStore);
     }
 
     private void setupView() {
@@ -49,6 +52,7 @@ public class MenuActivity extends AppCompatActivity {
         btnAutosizingTextViews.setOnClickListener(onAutosizingTextViewsClick());
         btnSafeBrowsing.setOnClickListener(onSafeBrowsingClick());
         btnPinningShortcutsAndWidgets.setOnClickListener(onPinningShortcutsAndWidgetsClick());
+        btnCustomDataStore.setOnClickListener(onCustomDataStoreClick());
     }
 
     private View.OnClickListener onNotificationChannelClick() {
@@ -77,6 +81,10 @@ public class MenuActivity extends AppCompatActivity {
 
     private View.OnClickListener onPinningShortcutsAndWidgetsClick() {
         return view -> openActivity(PinningActivity.class);
+    }
+
+    private View.OnClickListener onCustomDataStoreClick() {
+        return view -> openActivity(MemoNoteActivity.class);
     }
 
     private void openActivity(Class<?> cls) {
