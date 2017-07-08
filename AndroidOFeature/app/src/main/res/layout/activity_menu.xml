@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context="com.akexorcist.omg.MenuActivity">
+
+    <Button
+        android:id="@+id/btnNotificationChannel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notification_channel"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnPictureInPicture"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/picture_in_picture"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnFontInXml"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/font_in_xml"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnDownloadableFonts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/downloadable_fonts"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnAutosizingTextViews"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/autosizing_textviews"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSafeBrowsing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/safe_browsing"
+        android:textAllCaps="false" />
+</LinearLayout>

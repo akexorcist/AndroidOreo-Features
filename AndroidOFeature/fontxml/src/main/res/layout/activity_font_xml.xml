@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/th_sarabun_new"
+        android:text="@string/sample_text_regular"
+        android:textSize="@dimen/custom_text_size" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/th_sarabun_new"
+        android:text="@string/sample_text_bold"
+        android:textSize="@dimen/custom_text_size"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/th_sarabun_new"
+        android:text="@string/sample_text_italic"
+        android:textSize="@dimen/custom_text_size"
+        android:textStyle="italic" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/th_sarabun_new"
+        android:text="@string/sample_text_regular_bold_and_italic"
+        android:textSize="@dimen/custom_text_size"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:id="@+id/tvAnyMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sample_text_with_custom_font_programmatically"
+        android:textSize="@dimen/custom_text_size" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="sample_text_regular">ตัวหนังสือแบบปกติ๊ปกติ</string>
+    <string name="sample_text_bold">ตัวหนังสือแบบหน๊าหนา</string>
+    <string name="sample_text_italic">ตัวหนังสือแบบเอี๊ยงเอียง</string>
+    <string name="sample_text_regular_bold_and_italic">ตัวหนังสือแบบหน๊าหนาและเอี๊ยงเอียง</string>
+    <string name="sample_text_with_custom_font_programmatically">ตัวหนังสือที่ถูกกำหนดผ่านโค้ด</string>
+</resources>

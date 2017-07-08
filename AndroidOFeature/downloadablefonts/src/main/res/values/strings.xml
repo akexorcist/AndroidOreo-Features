@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">DownloadableFonts</string>
+    <string name="hello_android_o">Hello Android O</string>
+    <string name="downloadable_fonts_is_awesome">Downloadable Fonts is Awesome</string>
+    <string name="font_provider_not_found">Font provider not found</string>
+    <string name="font_not_found">Font not found</string>
+    <string name="font_unavailable">Font unavailable</string>
+    <string name="font_load_error">Font load error</string>
+    <string name="malformed_query">Malformed query</string>
+    <string name="wrong_certificates">Wrong certificates</string>
+    <string name="unknown_error">Unknown error</string>
+</resources>

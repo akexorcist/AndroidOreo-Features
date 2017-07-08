@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/root_padding"
+    tools:context=".AutosizingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/autosizing_regular"
+                android:textSize="@dimen/title_text_size" />
+
+            <FrameLayout
+                android:id="@+id/layoutRegularContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/resizing_layout_height"
+                android:background="@drawable/shape_background_round_blue"
+                android:padding="@dimen/resizing_layout_padding">
+
+                <android.support.v7.widget.AppCompatTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/regular_text_size" />
+            </FrameLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:text="@string/autosizing_default"
+                android:textSize="@dimen/title_text_size" />
+
+            <FrameLayout
+                android:id="@+id/layoutDefaultContainer"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/resizing_layout_height"
+                android:background="@drawable/shape_background_round_blue"
+                android:padding="@dimen/resizing_layout_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/white"
+                    app:autoSizeTextType="uniform" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:autoSizeTextType="uniform"
+                    android:text="@string/lorem_ipsum"
+                    android:textColor="@color/white" />
+
+            </FrameLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/autosizing_granularity"
+        android:textSize="@dimen/title_text_size" />
+
+    <FrameLayout
+        android:id="@+id/layoutGranularityContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/resizing_layout_height"
+        android:background="@drawable/shape_background_round_blue"
+        android:padding="@dimen/resizing_layout_padding">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@color/white"
+            app:autoSizeMaxTextSize="24sp"
+            app:autoSizeMinTextSize="14sp"
+            app:autoSizeStepGranularity="2sp"
+            app:autoSizeTextType="uniform" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/title_text_margin_top"
+        android:text="@string/autosizing_preset"
+        android:textSize="@dimen/title_text_size" />
+
+    <FrameLayout
+        android:id="@+id/layoutPresetContainer"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/resizing_layout_height"
+        android:background="@drawable/shape_background_round_blue"
+        android:padding="@dimen/resizing_layout_padding">
+
+        <android.support.v7.widget.AppCompatTextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/lorem_ipsum"
+            android:textColor="@color/white"
+            app:autoSizePresetSizes="@array/autosize_text_size_preset"
+            app:autoSizeTextType="uniform" />
+
+    </FrameLayout>
+
+</LinearLayout>

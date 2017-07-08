@@ -1,0 +1,6 @@
+include ':app', ':safebrowsing'
+include ':pictureinpicture'
+include ':notificationchannel'
+include ':fontxml'
+include ':downloadablefonts'
+include ':autosizing'

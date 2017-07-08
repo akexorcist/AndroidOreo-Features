@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AutoSizing</string>
+    <string name="lorem_ipsum">Lorem ipsum dolor sit amet</string>
+    <string name="autosizing_default">Default</string>
+    <string name="autosizing_granularity">Granularity</string>
+    <string name="autosizing_preset">Preset</string>
+    <string name="autosizing_regular">Regular</string>
+</resources>
