@@ -1,0 +1,9 @@
+<resources>
+    <string name="pin_shortcut">Pin Shortcut</string>
+    <string name="pin_widget">Pin Widget</string>
+    <string name="shortcut_info_long_label">Go to pinning shortcuts and widgets example screen</string>
+    <string name="shortcut_info_short_label">Pinning Screen</string>
+    <string name="hello_i_am_widget">Hello, I\'m widget!</string>
+    <string name="device_does_not_support_shortcut_pinning">Device does not support Shortcut Pinning</string>
+    <string name="device_does_not_support_widget_pinning">Device does not support Widget Pinning</string>
+</resources>

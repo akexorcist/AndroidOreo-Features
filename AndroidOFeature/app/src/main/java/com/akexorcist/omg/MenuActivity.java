@@ -10,6 +10,7 @@ import com.akexorcist.fontxml.FontXmlActivity;
 import com.akexorcist.notificationchannel.NotificationChannelActivity;
 import com.akexorcist.omg.autosizing.AutosizingActivity;
 import com.akexorcist.omg.downloadablefonts.DownloadableFontsActivity;
+import com.akexorcist.omg.pinning.PinningActivity;
 import com.akexorcist.omg.safebrowsing.SafeBrowsingActivity;
 import com.akexorcist.pictureinpicture.PictureInPictureActivity;
 
@@ -20,6 +21,7 @@ public class MenuActivity extends AppCompatActivity {
     private Button btnDownloadableFonts;
     private Button btnAutosizingTextViews;
     private Button btnSafeBrowsing;
+    private Button btnPinningShortcutsAndWidgets;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -36,6 +38,7 @@ public class MenuActivity extends AppCompatActivity {
         btnDownloadableFonts = findViewById(R.id.btnDownloadableFonts);
         btnAutosizingTextViews = findViewById(R.id.btnAutosizingTextViews);
         btnSafeBrowsing = findViewById(R.id.btnSafeBrowsing);
+        btnPinningShortcutsAndWidgets = findViewById(R.id.btnPinningShortcutsAndWidgets);
     }
 
     private void setupView() {
@@ -45,6 +48,7 @@ public class MenuActivity extends AppCompatActivity {
         btnDownloadableFonts.setOnClickListener(onDownloadableFontsClick());
         btnAutosizingTextViews.setOnClickListener(onAutosizingTextViewsClick());
         btnSafeBrowsing.setOnClickListener(onSafeBrowsingClick());
+        btnPinningShortcutsAndWidgets.setOnClickListener(onPinningShortcutsAndWidgetsClick());
     }
 
     private View.OnClickListener onNotificationChannelClick() {
@@ -69,6 +73,10 @@ public class MenuActivity extends AppCompatActivity {
 
     private View.OnClickListener onSafeBrowsingClick() {
         return view -> openActivity(SafeBrowsingActivity.class);
+    }
+
+    private View.OnClickListener onPinningShortcutsAndWidgetsClick() {
+        return view -> openActivity(PinningActivity.class);
     }
 
     private void openActivity(Class<?> cls) {

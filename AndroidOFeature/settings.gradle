@@ -1,4 +1,4 @@
-include ':app', ':safebrowsing'
+include ':app', ':safebrowsing', ':pinning'
 include ':pictureinpicture'
 include ':notificationchannel'
 include ':fontxml'

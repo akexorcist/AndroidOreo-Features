@@ -7,4 +7,5 @@
     <string name="downloadable_fonts">Downloadable Fonts</string>
     <string name="autosizing_textviews">Autosizing TextViews</string>
     <string name="safe_browsing">Safe Browsing</string>
+    <string name="pinning_shortcuts_and_widgets"><![CDATA[Pinning Shortcuts & Widgets]]></string>
 </resources>

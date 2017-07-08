@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="widget_root_layout_padding">24dp</dimen>
+    <dimen name="widget_text_size">18sp</dimen>
+    <dimen name="widget_background_corner_radius">4dp</dimen>
+    <dimen name="minimum_widget_width">100dp</dimen>
+    <dimen name="minimum_widget_height">40dp</dimen>
+</resources>

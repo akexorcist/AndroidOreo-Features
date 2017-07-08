@@ -1,0 +1,18 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.akexorcist.omg.pinning">
+
+    <application>
+        <activity android:name=".PinningActivity" />
+
+        <receiver android:name=".HelloWidgetProvider">
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <meta-data
+                android:name="android.appwidget.provider"
+                android:resource="@xml/hello_app_widget" />
+        </receiver>
+    </application>
+
+</manifest>
+

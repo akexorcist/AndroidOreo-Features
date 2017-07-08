@@ -48,4 +48,11 @@
         android:layout_height="wrap_content"
         android:text="@string/safe_browsing"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnPinningShortcutsAndWidgets"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pinning_shortcuts_and_widgets"
+        android:textAllCaps="false" />
 </LinearLayout>
