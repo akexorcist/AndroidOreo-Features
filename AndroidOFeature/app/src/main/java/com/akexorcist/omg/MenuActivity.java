@@ -14,6 +14,7 @@ import com.akexorcist.omg.downloadablefonts.DownloadableFontsActivity;
 import com.akexorcist.omg.pinning.PinningActivity;
 import com.akexorcist.omg.safebrowsing.SafeBrowsingActivity;
 import com.akexorcist.pictureinpicture.PictureInPictureActivity;
+import com.akexorcist.secondarydisplay.SecondaryDisplayActivity;
 
 public class MenuActivity extends AppCompatActivity {
     private Button btnNotificationChannel;
@@ -24,6 +25,8 @@ public class MenuActivity extends AppCompatActivity {
     private Button btnSafeBrowsing;
     private Button btnPinningShortcutsAndWidgets;
     private Button btnCustomDataStore;
+    private Button btnBackgroundService;
+    private Button btnSecondaryDisplay;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +45,8 @@ public class MenuActivity extends AppCompatActivity {
         btnSafeBrowsing = findViewById(R.id.btnSafeBrowsing);
         btnPinningShortcutsAndWidgets = findViewById(R.id.btnPinningShortcutsAndWidgets);
         btnCustomDataStore = findViewById(R.id.btnCustomDataStore);
+        btnBackgroundService = findViewById(R.id.btnBackgroundService);
+        btnSecondaryDisplay = findViewById(R.id.btnSecondaryDisplay);
     }
 
     private void setupView() {
@@ -53,6 +58,8 @@ public class MenuActivity extends AppCompatActivity {
         btnSafeBrowsing.setOnClickListener(onSafeBrowsingClick());
         btnPinningShortcutsAndWidgets.setOnClickListener(onPinningShortcutsAndWidgetsClick());
         btnCustomDataStore.setOnClickListener(onCustomDataStoreClick());
+        btnBackgroundService.setOnClickListener(onBackgroundServiceClick());
+        btnSecondaryDisplay.setOnClickListener(onSecondaryDisplayClick());
     }
 
     private View.OnClickListener onNotificationChannelClick() {
@@ -85,6 +92,14 @@ public class MenuActivity extends AppCompatActivity {
 
     private View.OnClickListener onCustomDataStoreClick() {
         return view -> openActivity(MemoNoteActivity.class);
+    }
+
+    private View.OnClickListener onBackgroundServiceClick() {
+        return null;
+    }
+
+    private View.OnClickListener onSecondaryDisplayClick() {
+        return view -> openActivity(SecondaryDisplayActivity.class);
     }
 
     private void openActivity(Class<?> cls) {

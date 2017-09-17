@@ -1,4 +1,6 @@
 include ':app'
+include ':backgroundexecutionlimits'
+include ':secondarydisplay'
 include ':customdatastore'
 include ':safebrowsing'
 include ':pinning'

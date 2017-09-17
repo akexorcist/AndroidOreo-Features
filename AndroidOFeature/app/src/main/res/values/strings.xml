@@ -9,4 +9,6 @@
     <string name="safe_browsing">Safe Browsing</string>
     <string name="pinning_shortcuts_and_widgets"><![CDATA[Pinning Shortcuts & Widgets]]></string>
     <string name="custom_data_store">Custom Data Store</string>
+    <string name="background_service_execution_limits">Background Service Execution Limits</string>
+    <string name="secondary_display">Secondary Display</string>
 </resources>

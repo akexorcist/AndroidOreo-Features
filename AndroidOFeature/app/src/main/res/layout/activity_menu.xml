@@ -62,4 +62,18 @@
         android:layout_height="wrap_content"
         android:text="@string/custom_data_store"
         android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnBackgroundService"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/background_service_execution_limits"
+        android:textAllCaps="false" />
+
+    <Button
+        android:id="@+id/btnSecondaryDisplay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/secondary_display"
+        android:textAllCaps="false" />
 </LinearLayout>

@@ -1,0 +1,4 @@
+<resources>
+    <string name="secondary_display_available">Secondary display is available in this device.</string>
+    <string name="secondary_display_unavailable">Sorry, your device doesn\'t support Secondary Display.</string>
+</resources>
